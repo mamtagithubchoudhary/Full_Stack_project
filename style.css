@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    border-radius: 50%;
+    float: right;
+    margin-top: auto;
+}
+main{
+    width: 90%;
+    height: 90%;
+    margin: 50px auto;
+    box-sizing: content-box;
+    
+}
+form{
+    border: 2px solid black;
+}
+.sub_div2{
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+.sub_div3{
+    background-color: white;
+    color: black;
+}
+table,th,tr,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    height: 100px;
+    width: 700px;
+    text-align: center;
+    background-color: gainsboro;
+    margin-left: 5px;
+}
+ 
