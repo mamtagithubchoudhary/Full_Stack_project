@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMI</title>
+    <style>
+       *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            background-color: rgb(33, 144, 92);
+            background-size: cover;
+            font-family: 'Nunito'sans-serif;
+        }
+        .container{
+             position: absolute;
+             left:50% ;
+             top: 50%;
+             transform:translate(-50%,-50%) ;
+        }
+        .age{
+            padding-top: 30px;
+          }
+        h1{
+            text-align: center; 
+            color: blue;
+            font-weight: bold;
+            font-size: 36px;
+            padding: 30px 0;
+        }
+        .box{
+            min-width: 400px;
+            min-height: 200px;
+            background: #fafafa;
+            border-radius:38px ;
+            text-align: center;
+            position: relative;
+        }
+        .box::before{
+            content:'' ;
+            position: absolute;
+            height: 150%;
+            width: 110%;
+            left: -5%;
+            top: -5%;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .content{
+            padding: 0 40px;
+
+        }
+        .input{
+            background: #fff;
+            border-radius: 28px;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        .input label{
+             font-family: 600;
+             color: black;
+             margin-bottom: 20px;
+        }
+        .input type{
+            outline: none;
+            border:none;
+            border-bottom:1px solid #4f7df9 ;
+             }
+             button#calculate{
+                color: white;
+                background: #4f7df9;
+                font-size: 16px;
+                border-radius: 12px;
+                padding: 12px 0;
+                width: 40%;
+                outline: none;
+                border: none;
+                transition: background .2s ease;
+             }
+             button#calculate:hover{
+                background: #0044ff;
+             }
+             .result{
+                padding: 30px 20px;
+             }
+             .result {
+                font-weight: 600;
+                font-size: 22px;
+                color: black;
+                margin-bottom: 15px;
+                text-align: center;
+             }
+    </style>
+    <script src="BIMcalculator.js" defer></script>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMI</title>
+    <link rel="stylesheet" href="BMI.css">
+    <script src="BMI.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Body Mass Index calculator</h1>
+           <div class="box">
+            <div class="content">
+                <div class="age">
+                    <label for="age">Age</label>
+                    <input type="text" id="age">
+                <label for="gn"><strong>Gender</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="radio1"  value="male" id="gn" required/>Male 
+                &nbsp; &nbsp;
+                <input type="radio" name="radio1" value="female" id="gn" required/>Female
+               <br>
+           </div>
+           <div class="input">
+           <p><b>Height in CM:</b>
+           <input type="text" id="height"><br><span id="height_error"></span>
+           </p><br><br>
+           <p><b>Weight in KG:</b>
+            <input type="text" id="weight"><br><span id="weight_error"></span>
+           </p>
+           </div>
+           <button id="btn">Calculate</button>
+           <p id="output"></p>
+    </div>
+    </div>
+    <div>
+        <h1>Healthy</h1>
+    </div>
+    </div>
+    
+</body>
+</html>
+</body>
+</html>
