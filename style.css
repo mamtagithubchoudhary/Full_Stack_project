@@ -1,39 +1,214 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
 
-img{
-    border-radius: 50%;
-    float: right;
-    margin-top: auto;
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Fira+Sans:wght@200&family=Maven+Pro&family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Fira+Sans:wght@200&family=Maven+Pro&family=Roboto&family=Source+Code+Pro:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
 }
-main{
-    width: 90%;
-    height: 90%;
-    margin: 50px auto;
-    box-sizing: content-box;
-    
+.sidebar{
+    position: absolute;
+    background-color:rgb(227, 225, 225);
+    font-family: 'Fira Sans',sans-serif;
+    height: 100vh;
+    transition: transform 3s ease-in;
 }
-form{
-    border: 2px solid black;
+.sidebar nav{
+    padding: 72px;
 }
-.sub_div2{
-    background-color: black;
-    color: white;
-    height: 100px;
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
 }
-.sub_div3{
-    background-color: white;
+.sidebar nav ul li a{
+    text-decoration: none;
     color: black;
 }
-table,th,tr,td{
-    border: 2px solid black;
-    border-collapse: collapse;
-    height: 100px;
-    width: 700px;
-    text-align: center;
-    background-color: gainsboro;
-    margin-left: 5px;
+.main{
+    /* background-color: Yellow; */
+    width: 90vw;
+    height: 100vh;
 }
- 
+.container{
+    display:flex;
+}
+.infoContainer{
+    /* background-color: rgb(196, 34, 115); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px;
+    display: flex;
+    margin-left: 2px;
+    justify-content: space-around;
+}
+.main .infoContainer .devInfo{
+    margin-left: 0px;
+}
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+.hello{
+    font-size: 3em;
+    
+}
+.name{
+    font-size: 3em;
+    font-weight:bold ;
+    font-family: 'Fira Sans',sans-serif;
+}
+.about{
+    font-size: 2.5em;
+}
+.moreabout{
+    font-size: 22px;
+    margin-top:23px ;
+    font-family: 'Fira Sans',sans-serif;
+}
+button{
+    margin-top: 34px;
+    padding:9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+    width:200px ;
+}
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.contactform{
+    margin: 100px;
+    margin-left: 2px;
+    padding:0 34px ;
+    font-family: 'Fira Sans',sans-serif;
+    max-width: 50 88px;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace; 
+     /* padding: 12px 0; */
+}
+.contactform form div{
+    padding: 7px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.contactform form{
+    margin: 0 40px;
+}
+#emailHelp{
+    font-size: 8px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0 ;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 20px;
+    margin: 3px 0;
+}
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Fira sans',sans-serif;
+}
+.blogContainer{
+    margin: 10 88px;
+}
+h1{
+    font-family: 'Fira sans',sans-serif;
+    margin: 23px;
+}
+p{
+    font-family: 'Source Code Pro', monospace; 
+}
+.intro{
+    margin: 10 88px;
+}
+.intro h2{
+    font-family: 'Fira sans',sans-serif;
+    margin:12px;
+
+}
+.intro p{
+    font-family: 'Fira sans',sans-serif;
+    margin:12px;
+}
+.skillContainer{
+    padding: 12px;
+    
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: 900;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+.sidebarGo{
+      transform: translate(-443px, 0px);
+      position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross{
+    margin-left: 180px;
+    margin-top: 10px;
+}
+ @media (max-width:1615px){
+
+     .devInfo{
+        font-size: 10px;
+     }
+   .devPic{
+      display: none;
+   }
+   .intro, .blogContainer, .contactform{
+    margin:50 8px;
+   }
+} 
